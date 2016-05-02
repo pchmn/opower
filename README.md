@@ -17,7 +17,7 @@ Installation des dépendances du package.json (outils pour le développement : `
 ```sh
 npm install
 ```
-Installation de l'outil de commande de Grunt : 
+Installation de l'outil de commande de `Grunt` : 
 ```sh
 npm install -g grunt-cli
 ```
