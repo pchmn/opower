@@ -3,7 +3,7 @@
 Le tp sur Opower comprenant la partie `JPA` ainsi que la partie `AngularJS` a été réalisé en utilisant [`jhipster`](https://jhipster.github.io).
 
 ## Création des entités
-Afin de créer les entités `Person`, `House`, `Device` et `Heater` nous avons utilisé `JDL Studio` qui va générer un fichier `.jh`. Ensuite il suffit d'appliquer la commande suivante dans le terminal : 
+Afin de créer les entités `Person`, `House`, `Device` et `Heater` nous avons utilisé `JDL Studio` qui va générer un fichier `.jh`. Ensuite il a suffit d'appliquer la commande suivante dans le terminal : 
 ```sh
 yo jhipster:import-jdl generatedFile.jh
 ```
