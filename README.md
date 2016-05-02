@@ -14,7 +14,7 @@ Avant de builder le projet, il est nécessaire de bien configurer la base de don
 
 Dans un premier temps il faut créer une base de données MySQL avec un nom au choix (par exemple `opower`).
 
-Ensuite il faut configurer la connexion à cette base dans le fichier `src/main/resources/config/application-dev.yml` et de modifier ces lignes : 
+Ensuite il faut configurer la connexion à cette base dans le fichier `src/main/resources/config/application-dev.yml` en y modifiant ces lignes : 
 ```yaml
     datasource:
         driver-class-name: com.mysql.jdbc.jdbc2.optional.MysqlDataSource
