@@ -9,13 +9,17 @@ yo jhipster:import-jdl generatedFile.jh
 ```
 Notre fichier JDL avec les entités, les relations et le diagramme UML est disponible à cette adresse : [http://jhipster.github.io/jdl-studio/](http://jhipster.github.io/jdl-studio/#view/entity%20Person%20%7B%0A%20%20%20%20name%20String%2C%0A%20%20%20%20email%20String%0A%7D%0A%0Aentity%20House%20%7B%0A%09name%20String%2C%0A%20%20%20%20size%20Integer%2C%0A%20%20%20%20nbRoom%20Integer%0A%7D%0A%0Aentity%20Device%20%7B%0A%09name%20String%2C%0A%20%20%20%20conso%20Integer%0A%7D%0A%0Aentity%20Heater%20%7B%0A%09name%20String%2C%0A%20%20%20%20conso%20Integer%0A%7D%0A%0Arelationship%20ManyToMany%20%7B%0A%09Person%7Bfriend%7D%20to%20Person%7BfriendOf%7D%0A%7D%0A%0Arelationship%20OneToMany%20%7B%0A%20%20%20%20House%7Binhabitant%7D%20to%20Person%7Bhouse%7D%0A%7D%0A%0Arelationship%20OneToMany%20%7B%0A%09House%7Bdevice%7D%20to%20Device%7Bhouse%7D%0A%7D%0A%0Arelationship%20OneToMany%20%7B%0A%09House%7Bheater%7D%20to%20Heater%7Bhouse%7D%0A%7D)
 
-## Configurer la connexion à la base de données
-Avant de builder le projet, il est nécessaire de bien configurer la connexion à la base de données. Pour cela il suffit d'aller dans le fichier `src/main/resources/config/application-dev.yml` et de modifier ces lignes : 
+## Configuration de la base de données
+Avant de builder le projet, il est nécessaire de bien configurer la base de données pour le projet.
+
+Dans un premier temps il faut créer une base de données MySQL avec un nom au choix (par exemple `opower`).
+
+Ensuite il faut configurer la connexion à cette base dans le fichier `src/main/resources/config/application-dev.yml` et de modifier ces lignes : 
 ```yaml
     datasource:
         driver-class-name: com.mysql.jdbc.jdbc2.optional.MysqlDataSource
-        url: jdbc:mysql://localhost:3306/opower?useUnicode=true&characterEncoding=utf8
-        name: opower # nom de la base
+        url: jdbc:mysql://localhost:3306/opower # nom de la base créée
+        name: opower # nom de la base créée
         username: root # nom utilisateur mysql
         password: root # password utilisateur mysql
 ```
