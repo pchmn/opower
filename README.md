@@ -1,4 +1,4 @@
-# Opower
+# TP Opower
 
 Le tp sur Opower comprenant la partie `JPA` ainsi que la partie `AngularJS` a été réalisé en utilisant [`jhipster`](https://jhipster.github.io).
 
@@ -30,6 +30,9 @@ Lancer le projet. L'application sera ensuite disponible à l'adresse `http://127
 mvn
 ```
 Pour lancer le serveur grunt en parallèle du serveur créé par la commande `mvn`, il suffit de lancer la commande `grunt` dans un nouvel onglet du terminal.
+
+<br>
+###### Clément Goachet - Paul Chemin
 
 <br>
 # README généré par jhipster
